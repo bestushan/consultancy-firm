@@ -31,6 +31,7 @@ header {
     background-color: var(--primary);
     color: white;
     padding: 20px 0;
+    position: static; /* Fallback for older browsers */
     position: fixed;
     width: 100%;
     top: 0;
@@ -80,16 +81,17 @@ nav ul li a:hover {
 }
 
 /* Hero Section */
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: white;
-    margin-top: 60px;
+    .hero {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./images/hero.png');
+        /* background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); */
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: white;
+        margin-top: 60px;
 }
 
 .hero-content {
