@@ -14,7 +14,7 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
@@ -126,24 +126,35 @@
 <section class="section testimonials" id="testimonials">
     <div class="container">
         <div class="section-title">
-            <h2>What Clients Say</h2>
+            <h2 id="testimonial-header">What Clients Say</h2>
         </div>
         <div class="testimonial-slider">
-            <div class="testimonial">
-                <p class="testimonial-text">"Ushantha's leadership program transformed our management team. The practical tools and insights he provided have had a measurable impact on our organizational performance."</p>
-                <p class="testimonial-author">John Smith</p>
-                <p class="testimonial-role">CEO, Tech Solutions Inc.</p>
+            <div class="slider-container">
+                <div class="testimonial active">
+                    <p class="testimonial-text">"Ushantha's leadership program transformed our management team. The practical tools and insights he provided have had a measurable impact on our organizational performance."</p>
+                    <p class="testimonial-author">John Smith</p>
+                    <p class="testimonial-role">CEO, Tech Solutions Inc.</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"The team-building workshop was exceptional. We've seen immediate improvements in communication and collaboration across departments."</p>
+                    <p class="testimonial-author">Sarah Johnson</p>
+                    <p class="testimonial-role">HR Director, Global Enterprises</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"Ushantha's executive coaching helped me become a more effective leader. His insights were tailored perfectly to my challenges."</p>
+                    <p class="testimonial-author">Michael Chen</p>
+                    <p class="testimonial-role">VP Operations, FinCorp</p>
+                </div>
             </div>
-            <!-- <div class="testimonial">
-                <p class="testimonial-text">"The team-building workshop was exceptional. We've seen immediate improvements in communication and collaboration across departments."</p>
-                <p class="testimonial-author">Sarah Johnson</p>
-                <p class="testimonial-role">HR Director, Global Enterprises</p>
+            <div class="slider-controls">
+                <button class="slider-prev" aria-label="Previous testimonial">‹</button>
+                <div class="slider-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+                <button class="slider-next" aria-label="Next testimonial">›</button>
             </div>
-            <div class="testimonial">
-                <p class="testimonial-text">"Ushantha's executive coaching helped me become a more effective leader. His insights were tailored perfectly to my challenges."</p>
-                <p class="testimonial-author">Michael Chen</p>
-                <p class="testimonial-role">VP Operations, FinCorp</p>
-            </div> -->
         </div>
     </div>
 </section>

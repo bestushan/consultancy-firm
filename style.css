@@ -244,15 +244,22 @@ nav ul li a:hover {
     background-attachment: fixed;
     color: white;
     text-align: center;
+    padding: 80px 0;
+    background-color: #f9f9f9;
 }
 
 .testimonial-slider {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
 }
 
 .testimonial {
     padding: 30px;
+}
+
+#testimonial-header{
+    color: white;
 }
 
 .testimonial-text {
@@ -269,6 +276,111 @@ nav ul li a:hover {
 .testimonial-role {
     font-size: 16px;
     color: var(--light);
+}
+
+/* Testimonial Slider */
+
+.slider-container {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.testimonial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.6s ease;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.testimonial.active {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 1;
+}
+
+.testimonial-text {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.testimonial-role {
+    color: #777;
+    font-size: 16px;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.slider-prev,
+.slider-next {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 15px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.slider-prev:hover,
+.slider-next:hover {
+    color: #007bff;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: #007bff;
+}
+
+@media (max-width: 768px) {
+    .testimonial-slider {
+        padding: 0 20px;
+    }
+    
+    .testimonial {
+        padding: 20px;
+    }
+    
+    .testimonial-text {
+        font-size: 16px;
+    }
 }
 
 /* Contact Section */
